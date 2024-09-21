@@ -16,6 +16,7 @@ print(a+b+c)
 v = int(input())
 print("V=", v**3,"\nTSA=", 6*v**2)
 """
+
 ### 2
 #1
 n = int(input())
