@@ -26,12 +26,14 @@ print(tuple_sandar)
 print(list_sandar[0], list_sandar[-1])
 
 # 5
-programs = {"Chrome":"birdenge", "Word":"wordE", "Excel":"excelE", "PowerPoint":"powerpointX"}
-suranys = input()
-try :
-    print(programs[suranys])
-except KeyError:
-    print("Qate")
+file_name = input()
+if "." not in file_name:
+    raise Exception("Extention zhoq")
+else:
+    for n in file_name:
+        if n == ".":
+            print(file_name[file_name.index(n)+1:])
+            break
 
 # 6
 n = input()
